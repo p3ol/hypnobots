@@ -9,6 +9,7 @@ size, disability, ethnicity, gender identity and expression, level of experience
 education, socio-economic status, nationality, personal appearance, race,
 religion, or sexual identity and orientation.
 
+
 ## Our Standards
 
 Examples of behavior that contributes to creating a positive environment
@@ -71,4 +72,3 @@ This Code of Conduct is adapted from the [Contributor Covenant][homepage], versi
 available at https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
 
 [homepage]: https://www.contributor-covenant.org
-
