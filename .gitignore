@@ -107,3 +107,6 @@ dist
 
 # Mac os shitty files
 .DS_Store
+
+# dotenv
+.env

@@ -6,12 +6,12 @@ const emojis = ['✨', '🐛', '♻️', '🏗', '📦', '📖'];
 
 const checkTitle = async (context, rules, report) => {
   const pull = context.payload.pull_request;
-  const clean = pull.title.substring(2);
-  const emoji = pull.title.substring(0, 1);
+  const clean = Array.from(pull.title).slice(2).join('');
+  const emoji = Array.from(pull.title)[0];
   const { valid, errors, warnings } = await lint(clean, rules);
 
   if (
-    (pull.user && pull.user.login === 'renovate') ||
+    (pull.user && pull.user.login === 'renovate[bot]') ||
     (valid && warnings.length === 0 && emojis.includes(emoji))
   ) {
     return;
@@ -87,8 +87,21 @@ module.exports = async context => {
   await checkCommits(context, rules, report);
 
   if (report.length > 0) {
-    const response = format(report);
-    const comment = context.issue({ body: response });
-    context.github.issues.createComment(comment);
+    let response = format(report);
+    const { data } = await context.github.issues.listComments(context.issue());
+
+    for (const comment of data.reverse()) {
+      if (comment.user.login === 'naming-cop[bot]') {
+        if (response === comment.body) {
+          response = null;
+        }
+        break;
+      }
+    }
+
+    if (response !== null) {
+      const comment = context.issue({ body: response });
+      context.github.issues.createComment(comment);
+    }
   }
 };
