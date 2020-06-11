@@ -732,10 +732,10 @@
   dependencies:
     debug "^4.0.0"
 
-"@poool/eslint-config-node@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@poool/eslint-config-node/-/eslint-config-node-1.0.1.tgz#d55a47b95aa4016343156134f2d2697272546678"
-  integrity sha512-4hduTpBR2n73r1NG/Y5X6oqfbWByxe7F+F5LmUfphlVyEhBidRWQc3fdyDlNrD4bBmHv6/iTmdiwJBjNk5vvCQ==
+"@poool/eslint-config-node@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@poool/eslint-config-node/-/eslint-config-node-1.0.2.tgz#de43a5d2e1c8cc33c7f9061410ca15019c96374e"
+  integrity sha512-Pm20cV05+YqTu2JheW3nTOqhygdPGOTx6iof1iI6B1z9GpghpPOax0C/4d3HI2eZ53JiD73MWF/AsfNKJ/CLcg==
 
 "@poool/eslint-config@1.0.0":
   version "1.0.0"
