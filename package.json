@@ -37,7 +37,7 @@
     "@poool/eslint-config": "1.5.0",
     "@poool/eslint-config-node": "1.5.0",
     "@poool/eslint-plugin": "1.5.0",
-    "codecov": "3.8.2",
+    "codecov": "3.8.3",
     "eslint": "7.31.0",
     "eslint-config-standard": "16.0.3",
     "eslint-plugin-babel": "5.3.1",
