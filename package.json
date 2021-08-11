@@ -27,7 +27,7 @@
     "@commitlint/core": "12.1.4",
     "conventional-changelog-conventionalcommits": "4.6.0",
     "dotenv": "10.0.0",
-    "node-emoji": "1.10.0",
+    "node-emoji": "1.11.0",
     "probot": "12.1.0"
   },
   "devDependencies": {
